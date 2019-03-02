@@ -1,12 +1,5 @@
-import { Observable, of } from 'rxjs';
-import {
-  filter,
-  ignoreElements,
-  mapTo,
-  map,
-  switchMap,
-  delay
-} from 'rxjs/operators';
+import { of } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
 import { combineEpics, ofType } from 'redux-observable';
 import { clear, LOAD_STORIES } from '../actions';
 
